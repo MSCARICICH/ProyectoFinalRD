@@ -200,7 +200,7 @@
     {
         display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: center;
         margin-left: auto;
     }
     .cerrar-menu
