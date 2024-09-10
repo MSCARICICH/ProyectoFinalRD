@@ -1,0 +1,226 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(27, 27, 27); 
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1
+{
+    color: #fff;
+    margin-top: 30px;
+}
+main h2
+{
+    color: #fff;
+    margin-top: 75px;
+}
+
+.mm-main
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.mm-cards1
+{
+    max-width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+	grid-template-columns: repeat(6, 1fr);
+    padding: 30px;
+}
+
+.cards1
+{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid blue;
+    background-color: rgb(0, 26, 65);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    transition: box-shadow 0.42s, transform 0.3s;
+}
+
+.cards1:hover
+{
+    box-shadow: 0px 0px 10px;
+    transition:  box-shadow 0.42s, transform 0.3s;
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+
+.cards1 h2
+{
+    margin-bottom: 10px;
+}
+
+.cards1 img
+{
+    width: 130px;
+    height: 125px;
+    margin: 15px;
+}
+
+.cards1 p
+{
+    font-size: 15px;
+    max-width: 225px;
+}
+
+.slider-frame
+{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul
+{
+    display: flex;
+    padding: 0;
+    width: 700%;
+    animation: slide 56s infinite ease-in-out;
+}
+
+.slider-frame li
+{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img
+{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+} 
+
+
+
+
+
+@keyframes slide 
+{
+
+
+    0%{margin-left: 0%;}
+    11.14%{margin-left: 0%;}
+
+    14.28%{margin-left: -100%;}
+    25.42%{margin-left: -100%;}
+
+
+    28.57%{margin-left: -200%;}
+    39.71%{margin-left: -200%;}
+
+    42.85%{margin-left: -300%;}
+    53.99%{margin-left: -300%;}
+
+    57.14%{margin-left: -400%;}
+    68.28%{margin-left: -400%;}
+
+    71.42%{margin-left: -500%;}
+    82.56%{margin-left: -500%;}
+
+    85.71%{margin-left: -600%;}
+    96.85%{margin-left: -600%;}
+
+}
+
+ @media(max-width:767px)
+{
+    .mm-cards1
+    {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1450px)
+{
+.mm-cards1
+{
+	grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media(max-width:960px)
+{
+.mm-cards1
+{
+	grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media(max-width:720px)
+{
+.mm-cards1
+{
+	grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media(max-width:480px)
+{
+.mm-cards1
+{
+	grid-template-columns: repeat(1, 1fr);
+}
+}
+
+/* responsive design del slide */
+
+@media(max-width:1290px)
+{
+.slider-frame
+{
+    width: 940px;
+}
+}
+
+@media(max-width:960px)
+{
+.slider-frame
+{
+    width: 700px;
+}
+}
+
+@media(max-width:721px)
+{
+.slider-frame
+{
+    width: 480px;
+}
+}
+
+@media(max-width:480px)
+{
+.slider-frame
+{
+    width: 360px;
+}
+}
