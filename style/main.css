@@ -207,6 +207,11 @@ main h2
 {
     width: 700px;
 }
+
+.slider-frame img
+{
+    height: 420px;
+}
 }
 
 @media(max-width:721px)
@@ -215,6 +220,10 @@ main h2
 {
     width: 480px;
 }
+.slider-frame img
+{
+    height: 320px;
+}
 }
 
 @media(max-width:480px)
@@ -222,5 +231,9 @@ main h2
 .slider-frame
 {
     width: 360px;
+}
+.slider-frame img
+{
+    height: 270px;
 }
 }
